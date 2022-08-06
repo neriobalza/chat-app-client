@@ -1,7 +1,13 @@
 import React from "react";
+import Router from "./router/Router";
+import "./assets/styles/Globals.scss";
 
 function App() {
-  return <div className="app"></div>;
+  return (
+    <>
+      <Router />
+    </>
+  );
 }
 
 export default App;

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v30-latin-regular.woff") format("woff");
+  font-weight: normal;
+}
+
+// VARS
+@import "./lib/Vars.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: $section-background-color;
+  color: $text-color;
+}
+
+a,
+button {
+  color: inherit;
+  font-family: "Roboto", sans-serif;
+}
