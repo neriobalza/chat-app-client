@@ -13,7 +13,7 @@ const Home = () => {
 
   const handleLogin = (event) => {
     event.preventDefault();
-    // navigate("/k", { replace: true });
+    navigate("/k", { replace: true });
   };
 
   const handleSignUp = (event) => {
