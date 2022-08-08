@@ -1,0 +1,37 @@
+@import "../lib/Vars.scss";
+
+.chat-app {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+
+  .main-container {
+    height: 100vh;
+  }
+
+  .chat-container {
+    height: 100vh;
+    background: $black;
+    // background-image: url("../../images/chat-bg-pattern-2.svg");
+    // background-size: 720px, 1480px;
+
+    .chat-background {
+      height: 100vh;
+      // background: linear-gradient(
+      //   45deg,
+      //   #43175b,
+      //   #43175b,
+      //   #765a47,
+      //   #323367,
+      //   #323367
+      // );
+
+      background: linear-gradient(-45deg, #765a47, #765a47, blue, violet);
+
+      -webkit-mask-image: url("../../images/chat-bg-pattern-2.svg");
+      mask-image: url("../../images/chat-bg-pattern-2.svg");
+      mask-size: 640px, 1315px;
+      mask-position: center;
+    }
+  }
+}
