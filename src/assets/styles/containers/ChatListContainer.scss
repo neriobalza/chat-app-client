@@ -1,0 +1,44 @@
+@import "../lib/Vars.scss";
+
+.chatlist-container {
+  height: 100vh;
+  position: relative;
+
+  .chatlist {
+    &__header {
+      button {
+        background: none;
+        border: none;
+        svg {
+          width: 2.5rem;
+          height: 2.5rem;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .contactlist {
+  }
+
+  .new-chat {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: $new-chat-button-color;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+      color: $white;
+    }
+  }
+}
