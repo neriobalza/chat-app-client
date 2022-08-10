@@ -6,7 +6,7 @@ import { BiSearch } from "react-icons/bi";
 
 const InputSearch = ({ id, name, className, type, placeholder }) => {
   return (
-    <div className="input-search">
+    <label htmlFor={id} className="input-search">
       <Input
         className="search"
         id={id}
@@ -17,7 +17,7 @@ const InputSearch = ({ id, name, className, type, placeholder }) => {
       />
 
       <BiSearch className="search-icon" />
-    </div>
+    </label>
   );
 };
 
