@@ -1,0 +1,32 @@
+@import "../lib/Vars.scss";
+
+.chatlist__header {
+  background: $section-color;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  height: 5.6rem;
+  gap: 1rem;
+
+  button {
+    background: $section-color;
+    border-radius: 50%;
+    border: none;
+    width: 100%;
+    max-width: 4.2rem;
+    height: 4.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: $button-hover-color;
+    }
+
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+      color: $white;
+    }
+  }
+}

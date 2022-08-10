@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../assets/styles/views/Home.scss";
 
+import Input from "../components/Input";
+
 const Home = () => {
   const [login, setLogin] = useState(true);
   const [loginData, setLoginData] = useState({
@@ -45,7 +47,7 @@ const Home = () => {
             className="login__form"
             autoComplete="off"
           >
-            <input
+            <Input
               type="email"
               name="email"
               id="l-email"
@@ -54,7 +56,7 @@ const Home = () => {
               value={loginData.email}
               onChange={handleChange}
             />
-            <input
+            <Input
               type="password"
               name="password"
               id="l-password"
@@ -78,7 +80,7 @@ const Home = () => {
             className="login__form"
             autoComplete="off"
           >
-            <input
+            <Input
               type="email"
               name="email"
               id="s-email"
@@ -87,7 +89,7 @@ const Home = () => {
               value={loginData.email}
               onChange={handleChange}
             />
-            <input
+            <Input
               type="password"
               name="password"
               id="s-password"
@@ -96,7 +98,7 @@ const Home = () => {
               value={loginData.password}
               onChange={handleChange}
             />
-            <input
+            <Input
               type="password"
               name="repeatPassword"
               id="repeat-password"

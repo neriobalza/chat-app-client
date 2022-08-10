@@ -27,26 +27,6 @@
       flex-direction: column;
       gap: 2rem;
 
-      input {
-        width: 100%;
-        background: $section-background-color;
-        height: 4.2rem;
-        border: 1px solid $input-boder-color;
-        border-radius: 2.1rem;
-        padding: 0 2rem;
-        font-size: 1.6rem;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        color: $text-color;
-        letter-spacing: 0.1rem;
-        outline: none;
-
-        &::placeholder {
-          font-family: "Roboto", sans-serif;
-          font-weight: bold;
-        }
-      }
-
       button {
         width: 100%;
         background: $section-background-color;

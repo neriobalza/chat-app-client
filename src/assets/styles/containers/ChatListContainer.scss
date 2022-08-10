@@ -5,17 +5,6 @@
   position: relative;
 
   .chatlist {
-    &__header {
-      button {
-        background: none;
-        border: none;
-        svg {
-          width: 2.5rem;
-          height: 2.5rem;
-          color: $white;
-        }
-      }
-    }
   }
 
   .contactlist {

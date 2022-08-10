@@ -1,0 +1,29 @@
+@import "../lib/Vars.scss";
+
+.input-search {
+  position: relative;
+  width: 100%;
+
+  .search-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    color: $gray;
+    position: absolute;
+    left: 0.95rem;
+    top: 0.95rem;
+    transition: color 200ms ease-in-out;
+    cursor: text;
+  }
+
+  .search {
+    padding: 0 4.2rem;
+
+    &:focus {
+      padding-left: 4.1rem;
+    }
+
+    &:focus ~ .search-icon {
+      color: $input-border-focus-color;
+    }
+  }
+}
