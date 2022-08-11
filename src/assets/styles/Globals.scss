@@ -25,7 +25,10 @@ body {
 }
 
 a,
-button {
+button,
+li {
+  list-style: none;
+  font-size: 1.6rem;
   color: inherit;
   font-family: "Roboto", sans-serif;
 }

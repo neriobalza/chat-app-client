@@ -8,7 +8,7 @@
   height: 5.6rem;
   gap: 1rem;
 
-  button {
+  .menu-button {
     background: $section-color;
     border-radius: 50%;
     border: none;
@@ -27,6 +27,47 @@
       width: 2.5rem;
       height: 2.5rem;
       color: $white;
+    }
+  }
+
+  .main-menu {
+    position: absolute;
+    top: 6.1rem;
+    background: rgba(33, 33, 33, 0.75);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    padding: 0.4rem;
+    border-radius: 1.2rem;
+    width: 100%;
+    max-width: 300px;
+
+    &__list {
+      &--item {
+        padding: 0.7rem 1.6rem 0.5rem;
+        gap: 1.6rem;
+        display: flex;
+        align-items: center;
+        border-radius: 0.8rem;
+
+        &:hover {
+          background-color: $menu-item-hover;
+        }
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    &__app-version {
+      font-size: 1.4rem;
+      text-align: center;
+      margin-top: 0.5rem;
+      padding: 1rem 0;
     }
   }
 }
