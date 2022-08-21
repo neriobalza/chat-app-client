@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/styles/components/ChatListHeader.scss";
 
 import InputSearch from "../components/InputSearch";
@@ -14,9 +14,23 @@ import {
 } from "react-icons/bi";
 
 const ChatListHeader = () => {
+  // eslint-disable-next-line no-unused-vars
+  const [menuActive, setMenuActive] = useState(false);
+
   const handleToggleMenu = () => {
     document.getElementById("main-menu").classList.toggle("active");
     document.getElementById("main-menu-button").classList.toggle("active");
+    window.addEventListener("mousemove", mouseMove);
+  };
+
+  const handleCloseMenu = () => {
+    document.getElementById("main-menu").classList.remove("active");
+    document.getElementById("main-menu-button").classList.remove("active");
+    window.removeEventListener("mousemove", mouseMove);
+  };
+
+  const mouseMove = (event) => {
+    if (event.clientX > 420 || event.clientY > 440) handleCloseMenu();
   };
 
   return (

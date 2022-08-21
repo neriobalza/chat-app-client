@@ -20,6 +20,7 @@
     justify-content: center;
     transition: background-color 250ms ease-in-out;
     cursor: pointer;
+    z-index: 1;
 
     &.active {
       background: $button-hover-color;
@@ -53,10 +54,12 @@
     opacity: 0;
     transform-origin: top left;
     backdrop-filter: blur(2.5px);
+    visibility: hidden;
 
     &.active {
       transform: scale(1, 1);
       opacity: 1;
+      visibility: visible;
     }
 
     &__list {
