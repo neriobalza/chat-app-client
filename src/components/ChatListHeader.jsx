@@ -14,13 +14,22 @@ import {
 } from "react-icons/bi";
 
 const ChatListHeader = () => {
+  const handleToggleMenu = () => {
+    document.getElementById("main-menu").classList.toggle("active");
+    document.getElementById("main-menu-button").classList.toggle("active");
+  };
+
   return (
     <header className="chatlist__header">
-      <button className="menu-button">
+      <button
+        id="main-menu-button"
+        className="menu-button"
+        onClick={handleToggleMenu}
+      >
         <BiMenu />
       </button>
 
-      <nav className="main-menu">
+      <nav className="main-menu" id="main-menu">
         <ul className="main-menu__list">
           <li className="main-menu__list--item">
             <BiBookmark />
