@@ -1,0 +1,77 @@
+@import "../lib/Vars.scss";
+
+.chat-preview {
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+
+  &.active {
+    background: #8774e1;
+  }
+
+  &:hover {
+    background: rgba(171, 171, 171, 0.08);
+  }
+
+  .image-container {
+    width: 100%;
+    height: 5.4rem;
+    max-width: 5.4rem;
+    min-width: 5.4rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 50%;
+    }
+  }
+
+  .data-container {
+    width: 100%;
+    padding: 0.4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    p {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.6rem;
+
+      .name {
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+
+      .hour {
+        font-size: 1.2rem;
+        color: #aaa;
+      }
+
+      .last-message {
+        color: #aaa;
+        font-size: 1.4rem;
+        overflow: hidden;
+        width: 100%;
+        max-width: 250px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: pre;
+      }
+
+      .unread-message {
+        padding: 0 1.2rem;
+        height: 2rem;
+        font-weight: bold;
+        border-radius: 2rem;
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #707579;
+      }
+    }
+  }
+}

@@ -1,12 +1,12 @@
 import React from "react";
-import "../assets/styles/components/InputSearch.scss";
+import "../assets/styles/components/Searchbar.scss";
 
 import Input from "./Input";
 import { BiSearch } from "react-icons/bi";
 
-const InputSearch = ({ id, name, className, type, placeholder }) => {
+const Searchbar = ({ id, name, className, type, placeholder }) => {
   return (
-    <label htmlFor={id} className="input-search">
+    <label htmlFor={id} className="searchbar">
       <Input
         className="search"
         id={id}
@@ -21,4 +21,4 @@ const InputSearch = ({ id, name, className, type, placeholder }) => {
   );
 };
 
-export default InputSearch;
+export default Searchbar;

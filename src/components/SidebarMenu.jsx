@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import "../assets/styles/components/ChatListHeader.scss";
-
-import InputSearch from "../components/InputSearch";
+import React from "react";
+import "../assets/styles/components/SidebarMenu.scss";
 import {
   BiMenu,
   BiBookmark,
@@ -13,14 +11,14 @@ import {
   BiBug,
 } from "react-icons/bi";
 
-const ChatListHeader = () => {
-  // eslint-disable-next-line no-unused-vars
-  const [menuActive, setMenuActive] = useState(false);
-
+const SidebarMenu = () => {
   const handleToggleMenu = () => {
     document.getElementById("main-menu").classList.toggle("active");
     document.getElementById("main-menu-button").classList.toggle("active");
     window.addEventListener("mousemove", mouseMove);
+    setTimeout(() => {
+      // window.addEventListener("click", mouseClick);
+    }, 500);
   };
 
   const handleCloseMenu = () => {
@@ -29,57 +27,60 @@ const ChatListHeader = () => {
     window.removeEventListener("mousemove", mouseMove);
   };
 
+  // const mouseClick = (event) => {
+  //   const isMenu = Array.from(event.target.classList).includes("menu");
+  //   console.log(isMenu);
+  // };
+
   const mouseMove = (event) => {
     if (event.clientX > 420 || event.clientY > 440) handleCloseMenu();
   };
 
   return (
-    <header className="chatlist__header">
+    <div className="sidebar-menu">
       <button
         id="main-menu-button"
-        className="menu-button"
+        className="sidebar-menu__button"
         onClick={handleToggleMenu}
       >
         <BiMenu />
       </button>
 
-      <nav className="main-menu" id="main-menu">
-        <ul className="main-menu__list">
-          <li className="main-menu__list--item">
+      <nav className="sidebar-menu__nav" id="main-menu">
+        <ul className="sidebar-menu__list">
+          <li className="sidebar-menu__list--item">
             <BiBookmark />
             <p>Saved Messages</p>
           </li>
-          <li className="main-menu__list--item">
+          <li className="sidebar-menu__list--item">
             <BiUser />
             <p>Contacts</p>
           </li>
-          <li className="main-menu__list--item">
+          <li className="sidebar-menu__list--item">
             <BiCog />
             <p>Settings</p>
           </li>
-          <li className="main-menu__list--item">
+          <li className="sidebar-menu__list--item">
             <BiMoon />
             <p>Dark Mode</p>
           </li>
-          <li className="main-menu__list--item">
+          <li className="sidebar-menu__list--item">
             <BiMeteor />
             <p>Animations</p>
           </li>
-          <li className="main-menu__list--item">
+          <li className="sidebar-menu__list--item">
             <BiHelpCircle />
             <p>ChatApp Features</p>
           </li>
-          <li className="main-menu__list--item">
+          <li className="sidebar-menu__list--item">
             <BiBug />
             <p>Report Bug</p>
           </li>
         </ul>
-        <p className="main-menu__app-version">ChatApp WebK 1.0.0</p>
+        <p className="sidebar-menu__app-version">ChatApp WebK 1.0.0</p>
       </nav>
-
-      <InputSearch id="input-search" name="input-search" placeholder="Search" />
-    </header>
+    </div>
   );
 };
 
-export default ChatListHeader;
+export default SidebarMenu;

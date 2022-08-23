@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-import ChatListContainer from "../containers/ChatListContainer";
+import ChatSidebar from "../containers/ChatSidebar";
 import ChatContainer from "../containers/ChatContainer";
 
 import "../assets/styles/views/ChatApp.scss";
@@ -9,7 +8,7 @@ import "../assets/styles/views/ChatApp.scss";
 const ChatApp = () => {
   return (
     <main className="chat-app">
-      <ChatListContainer />
+      <ChatSidebar />
       <ChatContainer />
     </main>
   );

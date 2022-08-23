@@ -1,0 +1,10 @@
+@import "../lib/Vars.scss";
+
+.sidebar-list {
+  background: $section-color;
+  padding: 0 0.8rem;
+
+  &.chats {
+    padding-bottom: 0.8rem;
+  }
+}
