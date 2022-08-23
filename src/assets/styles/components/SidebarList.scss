@@ -7,4 +7,14 @@
   &.chats {
     padding-bottom: 0.8rem;
   }
+
+  &.contacts {
+    padding-bottom: 0.8rem;
+
+    h2 {
+      font-size: 1.6rem;
+      color: $primary-purlple;
+      padding: 1.6rem 1rem;
+    }
+  }
 }

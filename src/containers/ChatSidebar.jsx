@@ -5,8 +5,10 @@ import SidebarHeader from "../components/SidebarHeader";
 import NewChatButton from "../components/NewChatButton";
 import SidebarList from "../components/SidebarList";
 import ChatPreview from "../components/ChatPreview";
+import ContactPreview from "../components/ContactPreview";
 
 const ChatSidebar = () => {
+  // eslint-disable-next-line no-unused-vars
   const chats = [
     {
       person: "Nerio Balza",
@@ -34,21 +36,10 @@ const ChatSidebar = () => {
       <section className="lists-container">
         <SidebarList className="chats">
           <ChatPreview />
-          <ChatPreview />
-          <ChatPreview />
-          <ChatPreview />
-          <ChatPreview />
-          <ChatPreview />
         </SidebarList>
         <SidebarList className="contacts">
           <h2>Contacts</h2>
-          <ChatPreview />
-          <ChatPreview />
-          <ChatPreview />
-          <ChatPreview />
-          <ChatPreview />
-          <ChatPreview />
-          <ChatPreview />
+          <ContactPreview />
         </SidebarList>
       </section>
       <NewChatButton />
