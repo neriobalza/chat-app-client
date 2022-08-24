@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/styles/containers/ChatSidebar.scss";
 
 import SidebarHeader from "../components/SidebarHeader";
-import NewChatButton from "../components/NewChatButton";
+import NewChatMenu from "../components/NewChatMenu";
 import SidebarList from "../components/SidebarList";
 import ChatPreview from "../components/ChatPreview";
 import ContactPreview from "../components/ContactPreview";
@@ -42,7 +42,8 @@ const ChatSidebar = () => {
           <ContactPreview />
         </SidebarList>
       </section>
-      <NewChatButton />
+
+      <NewChatMenu />
     </section>
   );
 };
