@@ -8,31 +8,10 @@ import ChatPreview from "../components/ChatPreview";
 import ContactPreview from "../components/ContactPreview";
 
 const ChatSidebar = () => {
-  // eslint-disable-next-line no-unused-vars
-  const chats = [
-    {
-      person: "Nerio Balza",
-      messages: [],
-      mute: false,
-      image: "",
-    },
-    {
-      person: "Nerio Balza",
-      messages: [],
-      mute: false,
-      image: "",
-    },
-    {
-      person: "Nerio Balza",
-      messages: [],
-      mute: false,
-      image: "",
-    },
-  ];
-
   return (
     <section className="chat-sidebar">
       <SidebarHeader />
+
       <section className="lists-container">
         <SidebarList className="chats">
           <ChatPreview />
