@@ -28,7 +28,7 @@ const NewChatMenu = () => {
   };
 
   const mouseMove = (event) => {
-    const windowWidth = window.innerWidth;
+    // const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
     if (event.clientY < windowHeight - 300) handleCloseMenu();
     if (event.clientX < 120 || event.clientX > 570) handleCloseMenu();
