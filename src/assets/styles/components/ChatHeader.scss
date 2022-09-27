@@ -1,0 +1,42 @@
+@import "../lib/Vars.scss";
+
+.chat-header {
+  width: 100%;
+  background: $section-color;
+  height: 5.6rem;
+  border-left: 2px solid $section-background-color;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__user {
+    display: flex;
+    gap: 1.6rem;
+    cursor: pointer;
+  }
+
+  &__user-avatar {
+    width: 4.2rem;
+    height: 4.2rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 50%;
+    }
+  }
+
+  &__user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    p {
+      font-size: 1.4rem;
+      color: $gray;
+    }
+  }
+}

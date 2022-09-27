@@ -1,7 +1,7 @@
 import React from "react";
 
 const ChatInput = () => {
-  return <div></div>;
+  return <div>ChatInput</div>;
 };
 
 export default ChatInput;

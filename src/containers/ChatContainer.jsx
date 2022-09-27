@@ -2,11 +2,12 @@ import React from "react";
 import "../assets/styles/containers/ChatContainer.scss";
 
 import Chat from "../components/Chat";
+import ChatBackground from "../components/ChatBackground";
 
 const ChatContainer = () => {
   return (
     <section className="chat-container">
-      <div className="chat-background"></div>
+      <ChatBackground />
       <Chat />
     </section>
   );

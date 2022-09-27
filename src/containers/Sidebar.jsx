@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/containers/ChatSidebar.scss";
+import "../assets/styles/containers/Sidebar.scss";
 
 import SidebarHeader from "../components/SidebarHeader";
 import NewChatMenu from "../components/NewChatMenu";
@@ -7,15 +7,16 @@ import SidebarList from "../components/SidebarList";
 import ChatPreview from "../components/ChatPreview";
 import ContactPreview from "../components/ContactPreview";
 
-const ChatSidebar = () => {
+const Sidebar = () => {
   return (
-    <section className="chat-sidebar">
+    <aside className="sidebar">
       <SidebarHeader />
 
       <section className="lists-container">
         <SidebarList className="chats">
           <ChatPreview />
         </SidebarList>
+
         <SidebarList className="contacts">
           <h2>Contacts</h2>
           <ContactPreview />
@@ -23,8 +24,8 @@ const ChatSidebar = () => {
       </section>
 
       <NewChatMenu />
-    </section>
+    </aside>
   );
 };
 
-export default ChatSidebar;
+export default Sidebar;

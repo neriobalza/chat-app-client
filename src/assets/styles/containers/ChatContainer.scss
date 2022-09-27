@@ -4,38 +4,4 @@
   height: 100vh;
   background: $black;
   position: relative;
-
-  .chat-background {
-    height: 100vh;
-    background: radial-gradient(
-        ellipse at top left,
-        rgb(126, 39, 160),
-        transparent 60%
-      ),
-      radial-gradient(ellipse at top right, rgb(83, 63, 172), transparent 60%),
-      radial-gradient(
-        ellipse at bottom right,
-        rgb(241, 152, 117),
-        transparent 60%
-      ),
-      radial-gradient(
-        ellipse at bottom left,
-        rgb(192, 73, 164),
-        transparent 60%
-      );
-
-    -webkit-mask-image: url("../../images/chat-bg-pattern-2.svg");
-    mask-image: url("../../images/chat-bg-pattern-2.svg");
-    mask-size: 640px, 1315px;
-    mask-position: left;
-    z-index: 0;
-  }
-  .chat {
-    position: absolute;
-    background: transparent;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
 }

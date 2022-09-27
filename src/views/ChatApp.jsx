@@ -1,6 +1,6 @@
 import React from "react";
 
-import ChatSidebar from "../containers/ChatSidebar";
+import Sidebar from "../containers/Sidebar";
 import ChatContainer from "../containers/ChatContainer";
 
 import "../assets/styles/views/ChatApp.scss";
@@ -8,7 +8,7 @@ import "../assets/styles/views/ChatApp.scss";
 const ChatApp = () => {
   return (
     <main className="chat-app">
-      <ChatSidebar />
+      <Sidebar />
       <ChatContainer />
     </main>
   );

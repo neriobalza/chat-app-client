@@ -2,15 +2,17 @@ import React from "react";
 import "../assets/styles/components/Chat.scss";
 
 import ChatHeader from "./ChatHeader";
+import ChatMessages from "./ChatMessages";
+import ChatInput from "./ChatInput";
 
 const Chat = () => {
   return (
     <div className="chat">
       <ChatHeader />
-
-      <ul className="chat-messages"></ul>
-
-      <div className="chat-input"></div>
+      <div className="chat-wrapper">
+        <ChatMessages />
+        <ChatInput />
+      </div>
     </div>
   );
 };
